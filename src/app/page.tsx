@@ -1,4 +1,3 @@
-import LinkButton from '@/components/linkButton/LinkButton';
 import PageHeader from '@/components/pageHeader/PageHeader';
 import PageSection from '@/components/pageSection/PageSection';
 import Reference from '@/components/pageSection/Reference';
@@ -43,11 +42,6 @@ export default function Home() {
           vaše technologie budou v těch nejlepších rukou, a vy se budete moci
           bez obav soustředit na to, co je pro vás nejdůležitější.
         </p>
-        <LinkButton
-          text='Zjistit více'
-          href='/about'
-          className='bg-myGray text-black visited:text-myPurple hover:bg-myPurple hover:text-myGray w-40'
-        />
       </PageSection>
 
       <PageSection className='bg-myGray text-center'>

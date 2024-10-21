@@ -31,7 +31,3 @@ a:visited {
 a:link, header a:visited {
   @apply text-myGray;
 }
-
-.linkButton a:link {
-  @apply text-black;
-}
