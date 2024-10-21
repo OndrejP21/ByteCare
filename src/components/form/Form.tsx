@@ -92,7 +92,9 @@ function Input({ value, onChange, label, values, type, id }: InputType) {
       </label>
       {values && values.length > 0 ? (
         <select {...props}>
-          <option disabled>Vyberte službu</option>
+          <option value='' selected disabled>
+            Vyberte službu
+          </option>
           {values.map((val, index) => (
             <option key={index} value={val}>
               {val}
