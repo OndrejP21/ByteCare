@@ -34,7 +34,7 @@ export default function ContactPage() {
       </PageSection>
 
       <PageSection className='bg-myGreen'>
-        <h2 className='text-center mb-4'>Napište nám!</h2>
+        <h2 className='text-center mb-4'>Kontaktujte nás!</h2>
         <ContactForm />
       </PageSection>
     </main>

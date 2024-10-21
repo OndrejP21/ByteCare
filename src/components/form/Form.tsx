@@ -80,7 +80,6 @@ function Input({ value, onChange, label, values, type, id }: InputType) {
         HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
       >,
     ) => onChange(e.target.value),
-    rows: 4,
     className:
       'mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-myGreen focus:border-myGreen',
     required: true,
@@ -93,6 +92,7 @@ function Input({ value, onChange, label, values, type, id }: InputType) {
       </label>
       {values && values.length > 0 ? (
         <select {...props}>
+          <option disabled>Vyberte službu</option>
           {values.map((val, index) => (
             <option key={index} value={val}>
               {val}
@@ -100,7 +100,7 @@ function Input({ value, onChange, label, values, type, id }: InputType) {
           ))}
         </select>
       ) : type === 'textarea' ? (
-        <textarea {...props} />
+        <textarea {...props} rows={4} />
       ) : (
         <input {...props} />
       )}

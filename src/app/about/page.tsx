@@ -32,7 +32,7 @@ export default function AboutPage() {
         </p>
       </PageSection>
 
-      <PageSection className='bg-myGreen text-white pageSectionCompleteCenter'>
+      <PageSection className='bg-myGreen pageSectionCompleteCenter'>
         <h2 className='mb-8'>Naše mise a vize</h2>
         <ul className='list-disc list-inside space-y-2'>
           <li>
@@ -59,7 +59,8 @@ export default function AboutPage() {
         </ul>
       </PageSection>
 
-      <PageSection className='bg-white text-myBlack pageSectionCompleteCenter'>
+      <PageSection className='bg-white pageSectionCompleteCenter'>
+        <h2 className='mb-4'>Co říká majitel firmy?</h2>
         <blockquote className='border-l-4 border-myGreen pl-4 italic text-lg flex flex-col items-center'>
           „ByteCare není jen o opravách. Naším cílem je přinést dlouhodobou
           hodnotu našim zákazníkům tím, že zajistíme, aby jejich technologie
@@ -71,11 +72,11 @@ export default function AboutPage() {
         </blockquote>
       </PageSection>
 
-      <PageSection className='bg-myGray text-myBlack pageSectionCompleteCenter'>
+      <PageSection className='bg-myGray text-black pageSectionCompleteCenter'>
         <h2 className='mb-8'>Ceník IT služeb</h2>
 
         <table className='w-full table-auto border-collapse bg-white rounded-lg shadow-lg'>
-          <thead className='bg-myGreen text-white'>
+          <thead className='bg-myGreen'>
             <tr>
               <th className='p-4 text-center'>Služba</th>
               <th className='p-4 text-right'>Cena</th>

@@ -13,9 +13,7 @@ export default function Home() {
         header='Opravujeme vaše počítače a technologie rychle a efektivně s péčí o
           každý bajt'
         description='ByteCare – odborníci na opravy hardwaru a softwaru s důrazem na
-          preciznost a spolehlivost.'>
-        <LinkButton href='/contact' text='Kontaktujte nás' />
-      </PageHeader>
+          preciznost a spolehlivost.'></PageHeader>
 
       <PageSection className='pageSectionCompleteCenter'>
         <h2 className='mb-12'>Naše služby</h2>
@@ -26,7 +24,7 @@ export default function Home() {
         </div>
       </PageSection>
 
-      <PageSection className='bg-myGreen text-white pageSectionCompleteCenter space-y-8'>
+      <PageSection className='bg-myGreen text-black pageSectionCompleteCenter space-y-8'>
         <h2 className='mb-4'>Proč ByteCare?</h2>
         <p>
           V dnešní digitální době se na technologie spoléháme více než kdy
@@ -48,7 +46,6 @@ export default function Home() {
         <LinkButton
           text='Zjistit více'
           href='/about'
-          rewriteColors
           className='bg-myGray text-black hover:bg-myPurple hover:text-myGray w-40'
         />
       </PageSection>
