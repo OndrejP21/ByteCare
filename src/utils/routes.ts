@@ -5,6 +5,6 @@ export const routes: Array<RouteType> = [
   { name: 'Služby', href: '/services' },
   { name: 'O nás', href: '/about' },
   { name: 'Galerie', href: '/gallery' },
-  { name: 'Reference', href: '/reference' },
+  { name: 'Reference', href: '/references' },
   { name: 'Kontakt', href: '/contact' },
 ];

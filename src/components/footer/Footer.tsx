@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className='flex lg:justify-between justify-center max-lg:space-y-5 max-lg:flex-col bg-myBlack text-myGray p-8 text-center'>
       <div className='flex flex-col justify-end lg:w-1/4'>
-        15. 10. 2024
+        21. 10. 2024
         <span className='text-myGreen pl-2'>peteron1@uhk.cz</span>
       </div>
       <div>

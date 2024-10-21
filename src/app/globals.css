@@ -11,7 +11,23 @@ h1 {
   @apply font-bold;
 }
 
+h2 {
+  @apply text-3xl font-bold;
+}
+
 p {
   max-width: 80ch;
   @apply text-justify;
+}
+
+.pageSectionCompleteCenter {
+  @apply flex flex-col justify-center items-center text-center;
+}
+
+a:visited {
+  @apply text-myPurple;
+}
+
+a:link, header a:visited {
+  @apply text-myGray;
 }

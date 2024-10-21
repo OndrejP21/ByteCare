@@ -1,4 +1,4 @@
-import { ServiceType } from '@/types/page-section.types';
+import { PriceListType, ServiceType } from '@/types/page-section.types';
 
 export const services: Array<ServiceType> = [
   {
@@ -36,5 +36,36 @@ export const services: Array<ServiceType> = [
   {
     header: 'Instalace zabezpečovacího softwaru',
     text: 'Pomůžeme vám vybrat a nainstalovat nejlepší bezpečnostní software pro ochranu vašeho počítače a dat.',
+  },
+];
+
+export const priceList: Array<PriceListType> = [
+  {
+    name: 'Oprava hardwaru',
+    price: 1500,
+  },
+  {
+    name: 'Instalace softwaru',
+    price: 800,
+  },
+  {
+    name: 'Reinstalace počítače',
+    price: 2500,
+  },
+  {
+    name: 'Čištění počítače',
+    price: 600,
+  },
+  {
+    name: 'Nastavení počítačové sítě',
+    price: 1200,
+  },
+  {
+    name: 'Odvirování počítače',
+    price: 1000,
+  },
+  {
+    name: 'Záloha a obnova dat',
+    price: 2000,
   },
 ];
