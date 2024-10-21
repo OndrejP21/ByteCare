@@ -46,7 +46,7 @@ export default function Home() {
         <LinkButton
           text='Zjistit více'
           href='/about'
-          className='bg-myGray text-black link:text-black visited:text-myPurple hover:bg-myPurple hover:text-myGray w-40'
+          className='bg-myGray text-black visited:text-myPurple hover:bg-myPurple hover:text-myGray w-40'
         />
       </PageSection>
 
