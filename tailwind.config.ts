@@ -9,7 +9,6 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        myBlack: '#191516',
         myGray: '#C9DAEA',
         myGreen: '#00B295',
         myPurple: '#AB2346',

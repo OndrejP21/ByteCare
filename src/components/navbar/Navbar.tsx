@@ -10,7 +10,7 @@ export default function Navbar() {
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
 
   return (
-    <header className='md:flex md:justify-between items-center bg-myBlack text-myGray py-2 lg:px-6 md:px-2 px-6 navbar'>
+    <header className='md:flex md:justify-between items-center bg-black text-myGray py-2 lg:px-6 md:px-2 px-6 navbar'>
       <div className='flex max-md:justify-between max-md:w-full'>
         <Link href='/'>
           <div className='flex items-center lg:gap-5 gap-2'>

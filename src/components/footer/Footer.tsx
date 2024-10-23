@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className='flex lg:justify-between justify-center max-lg:space-y-5 max-lg:flex-col bg-myBlack text-myGray p-8 text-center'>
+    <footer className='flex lg:justify-between justify-center max-lg:space-y-5 max-lg:flex-col bg-black text-myGray p-8 text-center'>
       <div className='flex flex-col justify-end lg:w-1/4'>
         21. 10. 2024
         <span className='text-myGreen pl-2'>peteron1@uhk.cz</span>
@@ -12,15 +12,17 @@ export default function Footer() {
         <p className='text-center'>
           &copy; 2024 Ondřej Petera. Všechna práva vyhrazena.
         </p>
-        <ul className='flex justify-center flex-wrap space-x-4 mt-4 gap-y-5'>
-          {routes.map((route, index) => (
-            <li key={index}>
-              <Link href={route.href} className='hover:text-myGreen'>
-                {route.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <nav>
+          <ul className='flex justify-center flex-wrap space-x-4 mt-4 gap-y-5'>
+            {routes.map((route, index) => (
+              <li key={index}>
+                <Link href={route.href} className='hover:text-myGreen'>
+                  {route.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
       </div>
       <div className='flex flex-col justify-end lg:w-1/4'>
         <div>Studentský zápočtový projekt</div>

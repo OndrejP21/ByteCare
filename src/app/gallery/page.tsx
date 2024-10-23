@@ -10,7 +10,7 @@ export default function GaleriePage() {
         description='Prohlédněte si naši práci a zařízení, se kterými denně pracujeme.'
       />
 
-      <PageSection className='bg-white text-myBlack pageSectionCompleteCenter'>
+      <PageSection className='bg-white text-black pageSectionCompleteCenter'>
         <h2 className='mb-8'>Naše fotogalerie</h2>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4'>
           {Array(8)
