@@ -75,7 +75,7 @@ export default function AboutPage() {
       <PageSection className='bg-myGray text-black pageSectionCompleteCenter'>
         <h2 className='mb-8'>Ceník IT služeb</h2>
 
-        <table className='w-full table-auto border-collapse bg-white rounded-lg shadow-lg'>
+        <table className='table-auto border-collapse bg-white rounded-lg shadow-lg'>
           <thead className='bg-myGreen'>
             <tr>
               <th className='p-4 text-center'>Služba</th>
@@ -85,8 +85,10 @@ export default function AboutPage() {
           <tbody>
             {priceList.map((price, index) => (
               <tr className='border-t hover:bg-myGray' key={index}>
-                <td className='p-4'>{price.name}</td>
-                <td className='p-4 text-right'>{price.price} Kč</td>
+                <td className='py-4 sm:px-8 px-2'>{price.name}</td>
+                <td className='py-4 sm:px-8 px-2 text-right'>
+                  {price.price} Kč
+                </td>
               </tr>
             ))}
           </tbody>

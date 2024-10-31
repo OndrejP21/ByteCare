@@ -5,12 +5,14 @@ import Image from 'next/image';
 import { routes } from '@/utils/routes';
 import { useState } from 'react';
 import { Bars3Icon } from '@heroicons/react/16/solid';
+import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
+  const path = usePathname();
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
 
   return (
-    <header className='md:flex md:justify-between items-center bg-black text-myGray py-2 lg:px-6 md:px-2 px-6 navbar'>
+    <header className='md:flex md:justify-between items-center bg-black py-2 lg:px-6 md:px-2 px-6 navbar text-myGray'>
       <div className='flex max-md:justify-between max-md:w-full'>
         <Link href='/'>
           <div className='flex items-center lg:gap-5 gap-2'>
@@ -30,7 +32,7 @@ export default function Navbar() {
             <li key={index}>
               <Link
                 href={route.href}
-                className='hover:text-myGreen hover:underline lg:p-5 md:p-1 max-md:py-3 max-md:px-5 max-md:block'>
+                className={`hover:text-myGreen hover:underline lg:p-5 md:p-1 max-md:py-3 max-md:px-5 max-md:block ${route.href === path ? 'underline' : 'd'}`}>
                 {route.name}
               </Link>
             </li>
