@@ -32,7 +32,7 @@ export default function Navbar() {
             <li key={index}>
               <Link
                 href={route.href}
-                className={`hover:text-myGreen hover:underline lg:p-5 md:p-1 max-md:py-3 max-md:px-5 max-md:block ${route.href === path ? 'underline' : 'd'}`}>
+                className={`hover:text-myGreen hover:underline lg:p-5 md:p-1 max-md:py-3 max-md:px-5 max-md:block ${route.href === path ? 'underline' : ''}`}>
                 {route.name}
               </Link>
             </li>
